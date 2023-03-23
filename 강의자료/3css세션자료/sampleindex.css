@@ -1,0 +1,123 @@
+span{
+  background-color: black;
+}
+
+div{
+  /* background-color: red; */
+  display:inline-block;
+}
+
+.b1{
+  width:100px;
+  height:100px;
+  position:relative;
+  background-color: red;
+}
+
+.b2{
+  width:100px;
+  height:100px;
+  position:relative;
+  left:50px;
+  top:30px;
+  background-color: green;
+  z-index: 100;
+}
+
+.b3{
+  width:100px;
+  height:100px;
+  background-color: blue;
+}
+
+.b4{
+  width:200px;
+  height:100px;
+  background-color: brown;
+  position: absolute;
+  left:20px;
+  top:30px;
+  z-index:1;
+}
+
+.box3{
+  width:100px;
+  height:100px;
+  background-color: red;
+  float:left;
+}
+
+.box4{
+  width:100px;
+  height:100px;
+  background-color: blue;
+  float:right;
+}
+
+p{
+  clear:both;
+}
+
+.container{
+  margin: auto auto;
+  padding: 10px;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.a1{
+  width:100px;
+  height:75px;
+  background-color: red;
+}
+
+.a2{
+  width:100px;
+  height:75px;
+  background-color: yellow;
+  flex-shrink: 10;
+}
+
+.a3{
+  width:100px;
+  height:75px;
+  background-color: green;
+}
+
+.a4{
+  width:100px;
+  height:75px;
+  background-color: blue;
+}
+
+.a5{
+  width:100px;
+  height:75px;
+  background-color: purple;
+}
+
+.item1{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item2{
+  background-color: yellow;
+  grid-row-start : 2;
+  grid-row-end: 4;
+}
+.item3{
+  background-color: green;
+}
+.item4{
+  background-color: blue;
+}
+
+.parent{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+}

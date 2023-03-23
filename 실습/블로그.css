@@ -161,7 +161,7 @@ button:hover {
   left: -5px;
 
   transition-property: background-color, top, left;
-  transition-duration: 2s, 2s, 2s;
+  transition-duration: 1s, 1s, 1s;
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
   transition-delay: 0, 0, 0;
 
@@ -171,7 +171,7 @@ button:hover {
 .slide-in {
   position: relative;
   animation-name: cat_animation;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   font-size: 40px;
   color: white;
@@ -183,7 +183,7 @@ button:hover {
   }
 
   50% {
-    left: 1111px;
+    left: 780px;
   }
 
   100% {
