@@ -1,0 +1,196 @@
+/* 전체 스타일 */
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  background-color: black;
+}
+
+/* 제목 스타일 */
+h1 {
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+/* 로그인 폼 스타일 */
+.login {
+  margin: 20px auto;
+  width: 400px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #eee;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: #03c75a;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 상단 컨테이너 스타일 */
+.top-container {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-container .search {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-container .text-area {
+  flex: 1;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #eee;
+}
+
+.top-container button {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #03c75a;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 하단 컨테이너 스타일 */
+.bottom-container {
+  margin: 20px auto;
+  width: 80%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-container p {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bottom-container h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bottom-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-container li {
+  margin: 10px 0;
+}
+
+.bottom-container li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button {
+  position: relative;
+  animation-name: move_animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move_animation {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+
+  25% {
+    left: 100px;
+    top: 100px;
+    background-color: yellow;
+  }
+
+  75% {
+    left: -100px;
+    top: 100px;
+    background-color: #03c75a;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #03c75a;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+  position: relative;
+  top: -5px;
+  left: -5px;
+
+  transition-property: background-color, top, left;
+  transition-duration: 2s, 2s, 2s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0, 0, 0;
+
+  /* transition: all 2s ease-in-out 0s; */
+}
+
+.slide-in {
+  position: relative;
+  animation-name: cat_animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-size: 40px;
+  color: white;
+}
+
+@keyframes cat_animation {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 1111px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.sleep {
+  margin-left: 70px;
+}
