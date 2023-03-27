@@ -120,38 +120,6 @@ h1 {
   font-size: 16px;
 }
 
-button {
-  position: relative;
-  animation-name: move_animation;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-@keyframes move_animation {
-  0% {
-    left: 0px;
-    top: 0px;
-    background-color: red;
-  }
-
-  25% {
-    left: 100px;
-    top: 100px;
-    background-color: yellow;
-  }
-
-  75% {
-    left: -100px;
-    top: 100px;
-    background-color: #03c75a;
-  }
-
-  100% {
-    left: 0px;
-    top: 0px;
-    background-color: #03c75a;
-  }
-}
 
 button:hover {
   cursor: pointer;
@@ -168,16 +136,23 @@ button:hover {
   /* transition: all 2s ease-in-out 0s; */
 }
 
-.slide-in {
+
+/* 사진 움직이는 에니메이션 정신사나워서 주석처리 */
+.sleep {
   position: relative;
-  animation-name: cat_animation;
+  animation-name: text_animation;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  font-size: 40px;
-  color: white;
+  margin-left: 40px;
 }
 
-@keyframes cat_animation {
+.img{
+  color : white;
+  font-size:20px;
+  /* display: */
+}
+
+@keyframes text_animation {
   0% {
     left: 0px;
   }
@@ -189,8 +164,4 @@ button:hover {
   100% {
     left: 0px;
   }
-}
-
-.sleep {
-  margin-left: 70px;
 }
