@@ -1,8 +1,12 @@
 /* 전체 스타일 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   background-color: black;
 }
@@ -15,6 +19,29 @@ h1 {
   color: white;
 }
 
+.fixed-parent {
+  text-align: right;
+  position: sticky;
+  top: 0px;
+}
+
+.fixed {
+  width: 15%;
+  display: inline-block;
+  color: white;
+  margin: 0 10px 0px 0;
+  border: 2px solid yellow;
+  font-size: 20px;
+}
+
+.fixed button {
+  width: 100%;
+  margin: 2px 0;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
 /* 로그인 폼 스타일 */
 .login {
   margin: 20px auto;
@@ -22,11 +49,9 @@ h1 {
   background-color: #f8f8f8;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login input[type="text"],
-.login input[type="password"] {
+.login input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -56,16 +81,15 @@ h1 {
   background-color: #f8f8f8;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.top-container .search {
+.search {
   font-size: 24px;
   font-weight: bold;
 }
 
-.top-container .text-area {
-  flex: 1;
+.text-area {
+  flex: 1; /*자동으로 크기조정*/
   margin: 0 20px;
   padding: 10px;
   border-radius: 3px;
@@ -89,37 +113,26 @@ h1 {
   background-color: #f8f8f8;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bottom-container p {
-  margin: 20px 0;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .bottom-container h3 {
-  margin: 20px 0 10px;
-  font-size: 20px;
-  font-weight: bold;
+  margin: 20px 0 5px;
 }
 
 .bottom-container ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
 .bottom-container li {
-  margin: 10px 0;
+  margin: 7px 0;
 }
 
-.bottom-container li a {
-  color: #333;
+li a {
+  color: blueviolet;
   text-decoration: none;
   font-size: 16px;
 }
-
 
 button:hover {
   cursor: pointer;
@@ -136,7 +149,6 @@ button:hover {
   /* transition: all 2s ease-in-out 0s; */
 }
 
-
 /* 사진 움직이는 에니메이션 정신사나워서 주석처리 */
 .sleep {
   position: relative;
@@ -144,13 +156,7 @@ button:hover {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   margin-left: 40px;
-  color : white;
-}
-
-.img{
-  color : white;
-  font-size:20px;
-  /* display: */
+  color: white;
 }
 
 @keyframes text_animation {
@@ -167,16 +173,26 @@ button:hover {
   }
 }
 
-a.byname:link{
-  color : black;
+a.byname:link {
+  color: black;
   text-decoration: none;
 }
 
-a.byname:visited{
-  color : black;
+a.byname:visited {
+  color: black;
   text-decoration: none;
 }
 
-span{
-  color:blue;
+a span {
+  color: blue;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.cat_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 5px solid blue;
 }
