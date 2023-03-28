@@ -34,10 +34,14 @@ h1 {
   font-size: 20px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .fixed button {
   width: 100%;
   margin: 2px 0;
-  background-color: green;
+  background-color: #03c75a;
   color: white;
   font-weight: bold;
 }
@@ -195,4 +199,5 @@ a span {
   flex-wrap: wrap;
   justify-content: space-between;
   border: 5px solid blue;
+  z-index: 2;
 }
