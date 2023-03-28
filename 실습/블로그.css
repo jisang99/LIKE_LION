@@ -141,9 +141,10 @@ button:hover {
 .sleep {
   position: relative;
   animation-name: text_animation;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   margin-left: 40px;
+  color : white;
 }
 
 .img{
@@ -164,4 +165,18 @@ button:hover {
   100% {
     left: 0px;
   }
+}
+
+a.byname:link{
+  color : black;
+  text-decoration: none;
+}
+
+a.byname:visited{
+  color : black;
+  text-decoration: none;
+}
+
+span{
+  color:blue;
 }
