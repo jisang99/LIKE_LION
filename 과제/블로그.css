@@ -157,7 +157,7 @@ button:hover {
 .sleep {
   position: relative;
   animation-name: text_animation;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   margin-left: 40px;
   color: white;
@@ -169,7 +169,7 @@ button:hover {
   }
 
   50% {
-    left: 780px;
+    left: 1100px;
   }
 
   100% {

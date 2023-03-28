@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+nav {
+  /* border : 1px solid red; */
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Layout {
+  font-size: 60px;
+  font-weight: bold;
+  margin : 30px 180px 30px 0px;
+}
+
+.Techit {
+  font-size: 35px;
+  font-weight:bold;
+  margin : 40px 0px 40px 100px;
+}
+
+header::before{
+
+}
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image:url(./사자배경.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;
+  /* opacity: 0.7; */
+}
+
+.large-text{
+  margin-top: 200px;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+  background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+.small-text{
+  font-size: 40px;
+  text-align: center;
+  opacity:1;
+}
+
+footer {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height : 800px;
+  align-items: center;
+}
+
+img {
+  display:inline-block;
+  margin-right : 70px;
+}
+
+
+
+
