@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  box-sizing: border-box;
+  padding: 0 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  height: 4rem;
+}
+
+.nav-right-item {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./사자배경.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-center-highlight-text {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.background-center-sub-text {
+  font-size: 1.6rem;
+}
+
+.bottom-container {
+  width: 100%;
+  height: calc(100vh - 24rem);
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-container {
+  width: 15rem;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-container .item-container .item-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.test-image {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 30rem;
+  width: 30rem;
+  background: url("./사자1.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}

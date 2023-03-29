@@ -19,15 +19,21 @@ h1 {
   color: white;
 }
 
+.fixed-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .fixed-parent {
-  text-align: right;
-  position: sticky;
-  top: 0px;
+  margin-right: 20px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
 }
 
 .fixed {
-  width: 15%;
-  display: inline-block;
+  width: 15rem;
+  height: 8rem;
   color: white;
   margin: 0 10px 0px 0;
   border: 2px solid yellow;
@@ -197,7 +203,8 @@ a span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   justify-content: space-between;
   border: 5px solid blue;
-  z-index: 2;
+  z-index: 20;
 }
