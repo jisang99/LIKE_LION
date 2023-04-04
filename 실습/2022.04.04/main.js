@@ -65,3 +65,5 @@ confirmBtn.addEventListener('click', ()=>{
     alert("취소를 누르셨습니다.")
   }
 })
+
+
