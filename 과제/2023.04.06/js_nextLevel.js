@@ -2,7 +2,7 @@ window.addEventListener('dblclick', ()=>{
   alert("멈춰");
 })
 
-/* ----------- STEP1 -----------*/
+
 const content = document.querySelector('.content');
 
 content.addEventListener('click', ()=>{
