@@ -1,9 +1,14 @@
-const sections = document.querySelectorAll('.section');
-let currentSection = 0;
+const extraMenus = document.querySelectorAll(".extraMenu");
 
-window.addEventListener('wheel', (event) => {
-  event.preventDefault();
-  const direction = event.deltaY > 0 ? 1 : -1;
-  currentSection = Math.min(Math.max(currentSection + direction, 0), sections.length - 1);
-  sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+extraMenus.forEach((extraMenu) => {
+  const extra = extraMenu.querySelector(".extra");
+  const subExtra = extraMenu.querySelector(".subExtra");
+
+  extra.addEventListener("mouseenter", () => {
+    subExtra.style.display = "flex";
+  });
+
+  extraMenu.addEventListener("mouseleave", () => {
+    subExtra.style.display = "none";
+  });
 });
