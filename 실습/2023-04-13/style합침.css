@@ -1,0 +1,232 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+@import "./reset.css";
+
+.nav{
+  width:100%;
+
+  position:fixed;
+  display:flex;
+  justify-content: space-between;
+  padding:3rem;
+  z-index:2;
+}
+
+.navLeft{
+
+  font-size: 2rem;
+  color: white;
+}
+
+.navLeft:hover{
+  cursor: pointer;
+}
+
+.navRight{
+  display:flex;
+
+  font-size: 1.3rem;
+  color: white;
+  margin-right: 15rem;
+  margin-top:0.5rem;
+}
+
+
+.navRightContent{
+  padding:0 2rem;
+}
+
+.navRightContent:hover{
+  cursor: pointer;
+}
+
+.box{
+  position: absolute;
+  width:4rem;
+  height:4rem;
+  background-color: yellow;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left : 80%;
+  top:50%;
+  border-radius: 3px;
+}
+
+.box:hover{
+  cursor: pointer;
+}
+
+.boxContent{
+  color:white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+img.backgroundImg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.navRightContent:after {/*after 가상요소*/
+  display:block;/*a요소를 블록 요소라고 선언*/
+/*혹시 a요소 크기만큼 생기길 바란다면 width 삭제*/
+  content: '';/*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+  border-bottom: solid 2px #fff;
+  transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+  transition: transform 250ms ease-in-out; /*변형 방식*/
+}
+
+.navRightContent:hover:after {
+  transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+}
+
+.en1 {
+    font-size: 40px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: white;
+    line-height: 20px;
+    
+}
+
+.ko1 {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    line-height: 15px;
+    left: 30%;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.button1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: none;
+    background-color: white;
+    padding: 12px;
+    top: 80%;
+    right: 5%;
+    border: 3px solid black;
+}
+
+.button2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: none;
+    background-color: white;
+    padding: 12px;
+    top: 84%;
+    right: 5%;
+    border: 3px solid black;
+    transform: rotate(180deg);
+}
+
+.etc {
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+
+.page1{
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+}
+
+.page3{
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.textBox{
+    position: absolute; /*postion이 static이 아닌 부모*/
+    top: 50%;
+    left: 50%; /*부모크기 50%*/
+    transform: translate(-50%, -50%); /*자기크기 50%*/
+
+    color: white;
+}
+.mainText{
+    font-weight: 800;
+    font-size: 5rem;
+}
+.subText{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.pageNum{
+    position: absolute;
+    top: 50%;
+    right:5%;
+
+    color:white;
+}
+.miniText{
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+
+    color: white;
+}
+.upBtn{
+    position: absolute;
+    bottom: 16.4%;
+    right: 5%;
+
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+
+    border: 0.3rem solid black;
+}
+.downBtn{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+
+    border: 0.3rem solid black;
+    transform: rotate(180deg);
+}
+.upDownText{
+    position: absolute; /*postion이 static이 아닌 부모*/
+    top: 50%;
+    left: 50%; /*부모크기 50%*/
+    transform: translate(-50%, -50%); /*자기크기 50%*/
+
+    font-size: 4rem;
+}
+
+
+

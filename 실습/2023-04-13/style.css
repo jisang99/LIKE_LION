@@ -1,0 +1,81 @@
+@import "./reset.css";
+
+.nav{
+  width:100%;
+
+  position:fixed;
+  display:flex;
+  justify-content: space-between;
+  padding:3rem;
+}
+
+.navLeft{
+
+  font-size: 2rem;
+  color: white;
+}
+
+.navLeft:hover{
+  cursor: pointer;
+}
+
+.navRight{
+  display:flex;
+
+  font-size: 1.3rem;
+  color: white;
+  margin-right: 15rem;
+  margin-top:0.5rem;
+}
+
+
+.navRightContent{
+  padding:0 2rem;
+}
+
+.navRightContent:hover{
+  cursor: pointer;
+}
+
+.box{
+  position: absolute;
+  width:4rem;
+  height:4rem;
+  background-color: yellow;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left : 80%;
+  top:50%;
+  border-radius: 3px;
+}
+
+.box:hover{
+  cursor: pointer;
+}
+
+.boxContent{
+  color:white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+img.backgroundImg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.navRightContent:after {/*after 가상요소*/
+  display:block;/*a요소를 블록 요소라고 선언*/
+/*혹시 a요소 크기만큼 생기길 바란다면 width 삭제*/
+  content: '';/*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+  border-bottom: solid 2px #fff;
+  transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+  transition: transform 250ms ease-in-out; /*변형 방식*/
+}
+
+.navRightContent:hover:after {
+  transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+}
