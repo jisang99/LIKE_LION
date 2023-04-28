@@ -1,0 +1,80 @@
+body{
+  /* background-color: black; */
+}
+
+a{
+  text-decoration-line: none;
+  color: black;
+}
+
+/* nav클래스 flex로 정렬 */
+.nav{
+  /* background-color: aqua; */
+  height:5rem;
+  width:100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  /* opacity: 0.5; */
+}
+
+
+/* 하이브랩 로고 이미지 제어 */
+.leftNav a img{
+  position:relative;
+  width:7.5rem;
+  left: 2rem;
+}
+
+
+/* 중간nav바 제어 */
+.midNav{
+  position:relative;
+  right:10rem;
+}
+
+.midNavMenu{
+  padding:0.3rem;
+}
+
+.rightNav{
+  position:relative;
+  right:3rem;
+}
+
+.rightNavMenu{
+  padding:0.3rem;
+}
+
+.pageNumver{
+  position: fixed;
+  font-size: 1.5rem;
+  top:75%;
+  left:5%;
+}
+
+.buttonUpDown{
+  position:fixed;
+  top:87%;
+  left:5%;
+}
+
+.down{
+  transform: rotate( 180deg );
+}
+
+button{
+  font-size: 1rem;
+  display: inline-block;
+  margin-right:-0.4rem;
+}
+
+.footer{
+  position:fixed;
+  top:92%;
+  right:5%;
+  font-size: 0.8rem;
+}
+
