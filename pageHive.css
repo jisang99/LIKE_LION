@@ -39,6 +39,16 @@ a{
   padding:0.3rem;
 }
 
+#midNavLine{
+  position : absolute;
+  border: 0.1rem solid black;
+  margin-top: 0.2rem;
+
+  /* 굳이 css에서 설정 안해도 js로 설정하면 되더라 */
+  /* display:none; */ 
+}
+
+
 .rightNav{
   position:relative;
   right:3rem;
@@ -77,4 +87,3 @@ button{
   right:5%;
   font-size: 0.8rem;
 }
-
