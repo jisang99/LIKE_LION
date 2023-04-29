@@ -1,3 +1,4 @@
+// 중간 nav메뉴 마우스 오버시 밑줄 나오게 하는 코드
 let midNavMenus = document.querySelectorAll(".midNavMenu");
 
 midNavMenus.forEach((midNavMenu) =>{
@@ -17,4 +18,16 @@ midNavMenus.forEach((midNavMenu) =>{
 })
 
 
+// 회사소개서 다운로드 동그라미 마우스 오버시 색깔 빨간색 되면서 투명도 사라지게 하는 코드
+let circle = document.querySelector(".circle");
 
+circle.addEventListener("mouseover", ()=>{
+  circle.style.backgroundColor = "red";
+  circle.style.transition = "background-color 0.5s ease-out"
+  circle.style.opacity = "1";
+})
+
+circle.addEventListener("mouseout", ()=>{
+  circle.style.backgroundColor = "gray";
+  circle.style.opacity = "0.5";
+})

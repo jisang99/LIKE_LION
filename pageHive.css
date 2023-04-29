@@ -87,3 +87,24 @@ button{
   right:5%;
   font-size: 0.8rem;
 }
+
+.circle{
+  border : 1px solid;
+  width : 11rem;
+  height : 11rem;
+  border-radius: 5.5rem;
+  background-color: gray;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top : 50%;
+  left: 15%;
+  opacity: 0.5;
+  color:white;
+}
+
+.circleImage, .circleText{
+  margin-top: 0.5rem;
+}
