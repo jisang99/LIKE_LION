@@ -108,3 +108,12 @@ button{
 .circleImage, .circleText{
   margin-top: 0.5rem;
 }
+
+.rightNavMenu::after{
+  content: "·";
+  margin-left:0.8rem;
+}
+
+.rightNavMenu:last-child::after{
+  content: "";
+}
