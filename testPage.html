@@ -2,187 +2,77 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Smooth Scroll Example</title>
-  <!-- css파일과 js파일을 따로 만들어서 하나의 HTML에 연결시킬 수 있음 -->
-  <link rel="stylesheet" href="./reset.css">
+  <title>하이브랩 카피하기!</title>
   <link rel="stylesheet" href="./testPage.css">
   <link rel="stylesheet" href="./pageHive.css">
-  <script src="./pageHive.js" defer></script>
   <script src="./testPage.js" defer></script>
+  <script src="./pageHive.js" defer></script>
 </head>
 <body>
-
-  <!-- 총 3페이지 구성 -->
-  <!-- 1페이지 -->
-  <div class="section">
-    <div class="page1">
-      <div class="nav">
-        <div class="leftNav">
-          <a href="" class="leftNavTitle"><img src="./로고.png" alt="HIVELAB"></a>
-        </div>
-        <div class="midNav">
-          <div class="midNavWrap">
-            <a href="" class="midNavMenu">ABOUT</a>
-            <a href="" class="midNavMenu">SERVICE</a>
-            <a href="" class="midNavMenu">WORK</a>
-            <a href="" class="midNavMenu">PEOPLE</a>
-            <a href="" class="midNavMenu">CONTACT</a>
-          </div>
-        </div>
-        <div class="rightNav">
-          <a href="" class="rightNavMenu" id="rightNavMenu1"><img src="./다운로드.png" alt="" width="15rem">&nbsp;회사소개서</a>
-          <ul class = "subMenu" id = "subMenu1">
-            <li><a href="">하이브랩 오피셜</a></li>
-            <li><a href="">디지털 마케팅 그룹</a></li>
-            <li><a href="">디지털 플랫폼 그룹</a></li>
-            <li><a href="">기술개발 그룹</a></li>
-            <li><a href="">게임 디자인 그룹</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu2">BLOG</a>
-          <ul class = "subMenu" id = "subMenu2">
-            <li><a href="">HIVELAB BLOG</a></li>
-            <li><a href="">Tech BLOG</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu3">FACEBOOK</a>
-          <a href="" class="rightNavMenu" id="rightNavMenu4">KOR</a>
-          <ul class = "subMenu" id = "subMenu4">
-            <li><a href="">Korean</a></li>
-            <li><a href="">English</a></li>
-            <li><a href="">Vietnamese</a></li>
-          </ul>
+  <!-- fixed로 화면에 고정되어있는 부분은 따로 -->
+  <div class="fixedPage">
+    <div class="nav">
+      <div class="leftNav">
+        <a href="" class="leftNavTitle"><img src="./로고.png" alt="HIVELAB"></a>
+      </div>
+      <div class="midNav">
+        <div class="midNavWrap">
+          <a href="" class="midNavMenu">ABOUT</a>
+          <a href="" class="midNavMenu">SERVICE</a>
+          <a href="" class="midNavMenu">WORK</a>
+          <a href="" class="midNavMenu">PEOPLE</a>
+          <a href="" class="midNavMenu">CONTACT</a>
         </div>
       </div>
-      <!-- js로 위치 설정하다보니 선을 그냥 다른 nav메뉴들이랑 동등한 위치에 해야되더라 -->
-      <div class="midNavLine"></div>
-      <div class="main">
-        <!-- <video src="./경상대.mp4" muted autoplay loop></video> -->
+      <div class="rightNav">
+        <a href="" class="rightNavMenu" id="rightNavMenu1"><img src="./다운로드.png" alt="" width="15rem">&nbsp;회사소개서</a>
+        <ul class = "subMenu" id = "subMenu1">
+          <li><a href="">하이브랩 오피셜</a></li>
+          <li><a href="">디지털 마케팅 그룹</a></li>
+          <li><a href="">디지털 플랫폼 그룹</a></li>
+          <li><a href="">기술개발 그룹</a></li>
+          <li><a href="">게임 디자인 그룹</a></li>
+        </ul>
+        <a href="" class="rightNavMenu" id="rightNavMenu2">BLOG</a>
+        <ul class = "subMenu" id = "subMenu2">
+          <li><a href="">HIVELAB BLOG</a></li>
+          <li><a href="">Tech BLOG</a></li>
+        </ul>
+        <a href="" class="rightNavMenu" id="rightNavMenu3">FACEBOOK</a>
+        <a href="" class="rightNavMenu" id="rightNavMenu4">KOR</a>
+        <ul class = "subMenu" id = "subMenu4">
+          <li><a href="">Korean</a></li>
+          <li><a href="">English</a></li>
+          <li><a href="">Vietnamese</a></li>
+        </ul>
       </div>
-      <span class="pageNumver">&nbsp;01<br>/04</span>
-      <span class="buttonUpDown">
-        <button class="up">^</button>
-        <button class="down">^</button>
-      </span>
-      <span class="footer">HIVELAB All rights reserved.</span>
-      <a href="" class="circle">
-        <div class="circleText">회사소개서</div>
-        <div class="circleImage"><img src="./다운로드.png" alt="다운로드" width="35rem"></div>
-      </a>
     </div>
+    <!-- js로 위치 설정하다보니 선을 그냥 다른 nav메뉴들이랑 동등한 위치에 해야되더라 -->
+    <div id="midNavLine"></div>
+    <div class="main">
+      <!-- <video src="./경상대.mp4" muted autoplay loop></video> -->
+    </div>
+
+    <span class="buttonUpDown">
+      <button class="up">^</button>
+      <button class="down">^</button>
+    </span>
+    <span class="footer">HIVELAB All rights reserved.</span>
+    <a href="" class="circle">
+      <div class="circleText">회사소개서</div>
+      <div class="circleImage"><img src="./다운로드.png" alt="다운로드" width="35rem"></div>
+    </a>
   </div>
+
   
-  <!-- 2페이지 -->
   <div class="section">
-    <div class="page2">
-      <div class="nav">
-        <div class="leftNav">
-          <a href="" class="leftNavTitle"><img src="./로고.png" alt="HIVELAB"></a>
-        </div>
-        <div class="midNav">
-          <div class="midNavWrap">
-            <a href="" class="midNavMenu">ABOUT</a>
-            <a href="" class="midNavMenu">SERVICE</a>
-            <a href="" class="midNavMenu">WORK</a>
-            <a href="" class="midNavMenu">PEOPLE</a>
-            <a href="" class="midNavMenu">CONTACT</a>
-          </div>
-        </div>
-        <div class="rightNav">
-          <a href="" class="rightNavMenu" id="rightNavMenu1"><img src="./다운로드.png" alt="" width="15rem">&nbsp;회사소개서</a>
-          <ul class = "subMenu" id = "subMenu1">
-            <li><a href="">하이브랩 오피셜</a></li>
-            <li><a href="">디지털 마케팅 그룹</a></li>
-            <li><a href="">디지털 플랫폼 그룹</a></li>
-            <li><a href="">기술개발 그룹</a></li>
-            <li><a href="">게임 디자인 그룹</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu2">BLOG</a>
-          <ul class = "subMenu" id = "subMenu2">
-            <li><a href="">HIVELAB BLOG</a></li>
-            <li><a href="">Tech BLOG</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu3">FACEBOOK</a>
-          <a href="" class="rightNavMenu" id="rightNavMenu4">KOR</a>
-          <ul class = "subMenu" id = "subMenu4">
-            <li><a href="">Korean</a></li>
-            <li><a href="">English</a></li>
-            <li><a href="">Vietnamese</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- js로 위치 설정하다보니 선을 그냥 다른 nav메뉴들이랑 동등한 위치에 해야되더라 -->
-      <div class="midNavLine"></div>
-      <div class="main">
-        <!-- <video src="./경상대.mp4" muted autoplay loop></video> -->
-      </div>
-      <span class="pageNumver">&nbsp;01<br>/04</span>
-      <span class="buttonUpDown">
-        <button class="up">^</button>
-        <button class="down">^</button>
-      </span>
-      <span class="footer">HIVELAB All rights reserved.</span>
-      <a href="" class="circle">
-        <div class="circleText">회사소개서</div>
-        <div class="circleImage"><img src="./다운로드.png" alt="다운로드" width="35rem"></div>
-      </a>
-    </div>
+    <span class="pageNumber1">&nbsp;01<br>/03</span>
   </div>
-
-  <!-- 3페이지 -->
   <div class="section">
-    <div class="page3">
-      <div class="nav">
-        <div class="leftNav">
-          <a href="" class="leftNavTitle"><img src="./로고.png" alt="HIVELAB"></a>
-        </div>
-        <div class="midNav">
-          <div class="midNavWrap">
-            <a href="" class="midNavMenu">ABOUT</a>
-            <a href="" class="midNavMenu">SERVICE</a>
-            <a href="" class="midNavMenu">WORK</a>
-            <a href="" class="midNavMenu">PEOPLE</a>
-            <a href="" class="midNavMenu">CONTACT</a>
-          </div>
-        </div>
-        <div class="rightNav">
-          <a href="" class="rightNavMenu" id="rightNavMenu1"><img src="./다운로드.png" alt="" width="15rem">&nbsp;회사소개서</a>
-          <ul class = "subMenu" id = "subMenu1">
-            <li><a href="">하이브랩 오피셜</a></li>
-            <li><a href="">디지털 마케팅 그룹</a></li>
-            <li><a href="">디지털 플랫폼 그룹</a></li>
-            <li><a href="">기술개발 그룹</a></li>
-            <li><a href="">게임 디자인 그룹</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu2">BLOG</a>
-          <ul class = "subMenu" id = "subMenu2">
-            <li><a href="">HIVELAB BLOG</a></li>
-            <li><a href="">Tech BLOG</a></li>
-          </ul>
-          <a href="" class="rightNavMenu" id="rightNavMenu3">FACEBOOK</a>
-          <a href="" class="rightNavMenu" id="rightNavMenu4">KOR</a>
-          <ul class = "subMenu" id = "subMenu4">
-            <li><a href="">Korean</a></li>
-            <li><a href="">English</a></li>
-            <li><a href="">Vietnamese</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- js로 위치 설정하다보니 선을 그냥 다른 nav메뉴들이랑 동등한 위치에 해야되더라 -->
-      <div class="midNavLine"></div>
-      <div class="main">
-        <!-- <video src="./경상대.mp4" muted autoplay loop></video> -->
-      </div>
-      <span class="pageNumver">&nbsp;01<br>/04</span>
-      <span class="buttonUpDown">
-        <button class="up">^</button>
-        <button class="down">^</button>
-      </span>
-      <span class="footer">HIVELAB All rights reserved.</span>
-      <a href="" class="circle">
-        <div class="circleText">회사소개서</div>
-        <div class="circleImage"><img src="./다운로드.png" alt="다운로드" width="35rem"></div>
-      </a>
-    </div>
+    <span class="pageNumber2">&nbsp;02<br>/03</span>
   </div>
-
+  <div class="section">
+    <span class="pageNumber3">&nbsp;03<br>/03</span>
+  </div>
 </body>
 </html>

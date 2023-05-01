@@ -39,8 +39,9 @@ a{
   padding:0.3rem;
 }
 
-.midNavLine{
-  position : absolute;
+/* fixed 설정해서 페이지 넘겨도 밑줄 정상적으로 뜨는거 확인함 */
+#midNavLine{
+  position : fixed;
   border: 0.1rem solid black;
   margin-top: 0.2rem;
 
@@ -52,16 +53,31 @@ a{
 .rightNav{
   position:relative;
   right:3rem;
-}
+}midnav
 
 .rightNavMenu{
   padding:0.3rem;
 }
 
-.pageNumver{
-  position: fixed;
+/* 스크롤해서 페이지 넘길때마다 숫자만 바뀌면 되니까 분할해서 각각 위치 absolute로 적용시켰음 */
+.pageNumber1{
+  position: absolute;
   font-size: 1.5rem;
   top:75%;
+  left:5%;
+}
+
+.pageNumber2{
+  position: absolute;
+  font-size: 1.5rem;
+  top:175%;
+  left:5%;
+}
+
+.pageNumber3{
+  position: absolute;
+  font-size: 1.5rem;
+  top:275%;
   left:5%;
 }
 
@@ -101,11 +117,8 @@ button{
   position: fixed;
 
   /* 위치설정 관련 원인불명 오류발생 */
-  /* 일단 top안쓰고 margin-top으로 하니까 css 적용됨 */
-  /* top : 50%; */
-  margin-top:30%;
-
-
+  /* fixed설정된 것을 3번 다 적으니까 겹쳐서 오류나는 거였음... */
+  top : 50%;
   left: 15%;
   opacity: 0.5;
   color:white;
