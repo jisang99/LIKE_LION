@@ -18,6 +18,7 @@ video{
 }
 
 /* 이거 왜 첫번째 section클래스를 2로 잡는지 모르겠음 */
+/* 되다가 안되다가 그러는데 js코드랑 관련있는듯*/
 .section:nth-of-type(2){
   background-color: aquamarine;
 }

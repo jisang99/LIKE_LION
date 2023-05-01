@@ -53,10 +53,7 @@
       <!-- <video src="./경상대.mp4" muted autoplay loop></video> -->
     </div>
 
-    <span class="buttonUpDown">
-      <button class="up">^</button>
-      <button class="down">^</button>
-    </span>
+
     <span class="footer">HIVELAB All rights reserved.</span>
     <a href="" class="circle">
       <div class="circleText">회사소개서</div>
@@ -64,15 +61,27 @@
     </a>
   </div>
 
-  
-  <div class="section">
-    <span class="pageNumber1">&nbsp;01<br>/03</span>
-  </div>
-  <div class="section">
-    <span class="pageNumber2">&nbsp;02<br>/03</span>
-  </div>
-  <div class="section">
-    <span class="pageNumber3">&nbsp;03<br>/03</span>
-  </div>
+
+    <div class="section" id="section-1">
+      <span class="pageNumber1">&nbsp;01<br>/03</span>
+      <span class="buttonUpDown1">
+        <button class="up">^</button>
+        <button class="down" onclick="goToScroll('section-2')">^</button>
+      </span>
+    </div>
+    <div class="section" id="section-2">
+      <span class="pageNumber2">&nbsp;02<br>/03</span>
+      <span class="buttonUpDown2">
+        <button class="up" onclick="goToScroll('section-1')">^</button>
+        <button class="down" onclick="goToScroll('section-3')">^</button>
+      </span>
+    </div>
+    <div class="section" id="section-3">
+      <span class="pageNumber3">&nbsp;03<br>/03</span>
+      <span class="buttonUpDown3">
+        <button class="up" onclick="goToScroll('section-2')">^</button>
+        <button class="down">^</button>
+      </span>
+    </div>
 </body>
 </html>

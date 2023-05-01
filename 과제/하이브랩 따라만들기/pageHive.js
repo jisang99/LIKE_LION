@@ -100,3 +100,16 @@ rightNavMenu4.addEventListener("mouseover", show_sub4);
 rightNavMenu4.addEventListener("mouseout", close_sub4);
 subMenu4.addEventListener("mouseover", show_sub4);
 subMenu4.addEventListener("mouseout", close_sub4);
+
+
+// 버튼 클릭하면 페이지 이동하게 만드는 코드
+// 스크롤 이동 기능
+// 클래스, 아이디 값을 인자로 받아 offsetTop 밸류 초기화
+// 초기화된 offsetTop 값을 위치로 이동
+
+// 버튼을 fixed로 해서 js로 구현하려고 하는데 계속 오류뜸
+// 그냥 버튼을 각 섹션마다 넣어서 oneclick에 함수 연결해서 사용하는 걸로 구현했음
+function goToScroll(name) {
+  let location = document.querySelector("#" + name).offsetTop;
+  window.scrollTo({top: location, behavior: 'smooth'});
+}

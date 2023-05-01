@@ -81,14 +81,34 @@ a{
   left:5%;
 }
 
-.buttonUpDown{
-  position:fixed;
+/* 버튼도 그냥 설정하기 어려워서 다 분할해서 나눴음 */
+/* 클릭하면 넘기는 기능 그냥 oneclick기능으로 구현하다 보니 이렇게 해야됬음 */
+/* 고정시킨상태로 js로 하려니까 계속 오류떠서 이렇게 구현함 */
+.buttonUpDown1{
+  position:absolute;
   top:87%;
   left:5%;
 }
 
+.buttonUpDown2{
+  position:absolute;
+  top:187%;
+  left:5%;
+}
+
+.buttonUpDown3{
+  position:absolute;
+  top:287%;
+  left:5%;
+}
+
+.up{
+  cursor: pointer;
+}
+
 .down{
   transform: rotate( 180deg );
+  cursor: pointer;
 }
 
 button{
