@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: #f5f5f5;
+}
+.section:nth-child(odd) {
+  background-color: #ddd;
+}
+.section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
