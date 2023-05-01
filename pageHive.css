@@ -39,7 +39,7 @@ a{
   padding:0.3rem;
 }
 
-#midNavLine{
+.midNavLine{
   position : absolute;
   border: 0.1rem solid black;
   margin-top: 0.2rem;
@@ -99,7 +99,13 @@ button{
   justify-content: center;
   align-items: center;
   position: fixed;
-  top : 50%;
+
+  /* 위치설정 관련 원인불명 오류발생 */
+  /* 일단 top안쓰고 margin-top으로 하니까 css 적용됨 */
+  /* top : 50%; */
+  margin-top:30%;
+
+
   left: 15%;
   opacity: 0.5;
   color:white;

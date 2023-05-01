@@ -2,7 +2,7 @@
 let midNavMenus = document.querySelectorAll(".midNavMenu");
 
 midNavMenus.forEach((midNavMenu) =>{
-  let midNavline = document.querySelector("#midNavLine");
+  let midNavLine = document.querySelector(".midNavLine");
 
   midNavMenu.addEventListener("mouseover", ()=>{
     let rect = midNavMenu.getBoundingClientRect();
