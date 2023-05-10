@@ -1,0 +1,210 @@
+/* 전체 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  background-color: black;
+}
+
+/* 제목 스타일 */
+h1 {
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.fixed-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-parent {
+  margin-right: 20px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.fixed {
+  width: 15rem;
+  height: 8rem;
+  color: white;
+  margin: 0 10px 0px 0;
+  border: 2px solid yellow;
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fixed button {
+  width: 100%;
+  margin: 2px 0;
+  background-color: #03c75a;
+  color: white;
+  font-weight: bold;
+}
+
+/* 로그인 폼 스타일 */
+.login {
+  margin: 20px auto;
+  width: 400px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #eee;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: #03c75a;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 상단 컨테이너 스타일 */
+.top-container {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.search {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-area {
+  flex: 1; /*자동으로 크기조정*/
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #eee;
+}
+
+.top-container button {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #03c75a;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 하단 컨테이너 스타일 */
+.bottom-container {
+  margin: 20px auto;
+  width: 80%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.bottom-container h3 {
+  margin: 20px 0 5px;
+}
+
+.bottom-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bottom-container li {
+  margin: 7px 0;
+}
+
+li a {
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+  position: relative;
+  top: -5px;
+  left: -5px;
+
+  transition-property: background-color, top, left;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0, 0, 0;
+
+  /* transition: all 2s ease-in-out 0s; */
+}
+
+/* 사진 움직이는 에니메이션 정신사나워서 주석처리 */
+.sleep {
+  position: relative;
+  animation-name: text_animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  margin-left: 40px;
+  color: white;
+}
+
+@keyframes text_animation {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 1100px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+a.byname:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.byname:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a span {
+  color: blue;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.cat_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  border: 5px solid blue;
+  z-index: 20;
+}
