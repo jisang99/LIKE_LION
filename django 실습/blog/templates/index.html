@@ -1,0 +1,12 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block content %}
+
+
+
+    {% for post in posts %}
+    <a href="{% url 'detail' post.id %}">{{post.title}}</a>
+    {% endfor %}
+
+
+{% endblock %}

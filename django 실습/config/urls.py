@@ -20,5 +20,6 @@ from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.write, name="write")
+    path('', views.index, name="index"),
+    path('detail/<int:post_id>', views.detail, name="detail"),
 ]
