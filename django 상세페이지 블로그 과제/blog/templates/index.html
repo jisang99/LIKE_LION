@@ -1,0 +1,27 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block content %}
+
+
+  {% for post in posts %}
+  <div class="login">
+    <label for="id"> 아이디 </label>
+
+    <input type="text" name="" id="id" />
+
+    <br />
+
+    <label for="pwd">
+      <span>비밀번호</span>
+      <input type="password" id="pwd" />
+    </label>
+
+    <button>
+      <a href="{% url 'detail' post.id %}">{{ post.title }}</a>
+    </button>
+  </div>
+    
+
+  {% endfor %}
+
+{% endblock %}
