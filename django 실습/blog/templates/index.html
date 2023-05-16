@@ -7,6 +7,6 @@
     {% for post in posts %}
     <a href="{% url 'detail' post.id %}">{{post.title}}</a>
     {% endfor %}
-
+    <a href="{% url 'create' %}"><button>write</button></a>
 
 {% endblock %}
