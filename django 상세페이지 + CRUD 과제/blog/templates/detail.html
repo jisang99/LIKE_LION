@@ -2,12 +2,20 @@
 {% load static %}
 {% block content %}
 
-
-  <h1>{{ post_detail.tilte }}</h1>
-  <p>{{ post_detail.body }}</p>
+<hr>
+  <h1>{{ post_detail.title }}</h1>
+  <h3>{{ post_detail.body }}</h3>
+  <br>
   <p>최근 업데이트 일자 : {{ post_detail.pub_date }}</p>
 
-  <br><br>
+
+  <div class="create">
+    <a href="{% url 'create' %}"><button>오늘의 한마디 글쓰기</button></a>
+    <a href="{% url 'update' post_detail.id %}"><button>수정하기</button></a>
+    <a href="{% url 'delete' post_detail.id %}"><button>로그아웃 (로그아웃 시 오늘의 한마디 삭제)</button></a>
+  </div>
+
+  <br><br><hr>
   <div class="fixed-wrapper">
     <div class="fixed-parent">
       <div class="fixed">
