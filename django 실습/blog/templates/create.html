@@ -1,10 +1,11 @@
 {% extends "nav.html" %}
 {% load static %}
 {% block content %}
-  <form action="{% url 'create' %}" method="post">
+  <form action="{% url 'create' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     제목: <input type="text", name="title">
     내용: <textarea name="body"></textarea>
+    <input type="file" class = "imaUploadBtn_icon" name="photo">
     <input type="submit", value="제출">
   </form>
 {% endblock %}

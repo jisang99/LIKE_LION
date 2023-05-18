@@ -2,11 +2,19 @@
 {% load static %}
 {% block content %}
 
+<head>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type = "text/css">
+</head>
+<body>
+    <img src="{% static 'image/구글.png' %}" width="100%" heigjt="500px">
 
 
     {% for post in posts %}
     <a href="{% url 'detail' post.id %}">{{post.title}}</a>
     {% endfor %}
     <a href="{% url 'create' %}"><button>write</button></a>
+
+
+</body>
 
 {% endblock %}

@@ -4,8 +4,9 @@
 
 
   <h1>{{ post_datail.title }}</h1>
-  <p>{{ post_detail.pub_date }}</p>
   <h2>{{ post_detail.body }}</h2>
+  <img src="{{ post_detail.photo.url }}" alt="">
+  <p>{{ post_detail.pub_date }}</p>
   <a href="{% url 'update' post_detail.id %}">수정</a>
   <a href="{% url 'delete' post_detail.id %}">삭제</a>
 
