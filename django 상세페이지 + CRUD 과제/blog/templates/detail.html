@@ -2,6 +2,11 @@
 {% load static %}
 {% block content %}
 
+<head>
+  <link rel="stylesheet" href="{% static 'css/블로그.css' %}" type="text/css">
+</head>
+
+
 <hr>
   <h1>{{ post_detail.title }}</h1>
   <h3>{{ post_detail.body }}</h3>
@@ -30,11 +35,11 @@
   <div class="sleep">고양이 사진 전시관😴 <br /></div>
 
   <div class="cat_img">
-    <img src="./아기고양이.webp" alt="아기고양이" width="200px" />
-    <img src="./고양이.jfif" alt="고양이" width="200px" />
-    <img src="./고양이2.jpg" alt="고양이2" width="200px" />
-    <img src="./고양이3.jpg" alt="고양이3" width="200px" />
-    <img src="./고양이4.jpg" alt="고양이4" width="200px" />
+    <img src="{% static 'image/아기고양이.webp' %}" alt="아기고양이" width="200px" />
+    <img src="{% static 'image/고양이.jfif' %}" alt="아기고양이" width="200px" />
+    <img src="{% static 'image/고양이2.jpg' %}" alt="아기고양이" width="200px" />
+    <img src="{% static 'image/고양이3.jpg' %}" alt="아기고양이" width="200px" />
+    <img src="{% static 'image/고양이4.jpg' %}" alt="아기고양이" width="200px" />
   </div>
 
   <div class="top-container">
