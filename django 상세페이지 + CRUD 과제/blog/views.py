@@ -17,6 +17,10 @@ def create(request):
         post.title=request.POST['title']
         post.body=request.POST['body']
         post.pub_date=timezone.datetime.now()
+
+        if(request.FILES.get("photo") is not None):
+            post.photo = request.FILES['photo']
+
         post.save()
         return redirect('/detail/'+str(post.id))
     else:

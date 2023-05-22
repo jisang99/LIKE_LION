@@ -12,11 +12,24 @@ body {
 }
 
 /* 제목 스타일 */
-h1 {
+h1, h6, p.upload{
   margin: 20px;
   font-size: 40px;
   text-align: center;
   color: white;
+}
+
+h6, p.upload{
+  font-size:20px;
+}
+
+div.create{
+  text-align: center;
+}
+
+img.upload{
+  position:relative;
+  left:40%;
 }
 
 .fixed-wrapper {
@@ -96,6 +109,7 @@ h1 {
 .search {
   font-size: 24px;
   font-weight: bold;
+  color:black;
 }
 
 .text-area {
@@ -207,4 +221,8 @@ a span {
   justify-content: space-between;
   border: 5px solid blue;
   z-index: 20;
+}
+
+p{
+  color:white;
 }
