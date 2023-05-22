@@ -5,10 +5,12 @@ from django.utils import timezone
 # Create your views here.
 def index(request):
     posts = Post.objects.all()
+    print(str(posts.query))
     return render(request, "index.html", {'posts':posts})
 
 def detail(request, post_id):
     post_detail = get_object_or_404(Post, pk=post_id)
+<<<<<<< Updated upstream
     return render(request, "detail.html", {"post_detail" : post_detail})
 
 def create(request):
@@ -38,3 +40,9 @@ def delete(request, post_id):
     post = Post.objects.get(id=post_id)
     post.delete()
     return redirect('index')
+=======
+    post_detail = Post.objects.filter(id = post_id)
+    print(str(post_detail.query))
+   
+    return render(request, "detail.html", {"post_detail" : post_detail})
+>>>>>>> Stashed changes

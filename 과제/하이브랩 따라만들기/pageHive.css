@@ -1,17 +1,17 @@
-body{
+body {
   /* background-color: black; */
 }
 
-a{
+a {
   text-decoration-line: none;
   color: black;
 }
 
 /* nav클래스 flex로 정렬 */
-.nav{
+.nav {
   /* background-color: aqua; */
-  height:5rem;
-  width:100vw;
+  height: 5rem;
+  width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -20,28 +20,26 @@ a{
   /* opacity: 0.5; */
 }
 
-
 /* 하이브랩 로고 이미지 제어 */
-.leftNav a img{
-  position:relative;
-  width:7.5rem;
+.leftNav a img {
+  position: relative;
+  width: 7.5rem;
   left: 2rem;
 }
 
-
 /* 중간nav바 제어 */
-.midNav{
-  position:relative;
-  right:10rem;
+.midNav {
+  position: relative;
+  right: 10rem;
 }
 
-.midNavMenu{
-  padding:0.3rem;
+.midNavMenu {
+  padding: 0.3rem;
 }
 
 /* fixed 설정해서 페이지 넘겨도 밑줄 정상적으로 뜨는거 확인함 */
-#midNavLine{
-  position : fixed;
+#midNavLine {
+  position: fixed;
   border: 0.1rem solid black;
   margin-top: 0.2rem;
 
@@ -49,88 +47,88 @@ a{
   /* display:none; */
 }
 
-
-.rightNav{
-  position:relative;
-  right:3rem;
-}midnav
-
-.rightNavMenu{
-  padding:0.3rem;
+.rightNav {
+  position: relative;
+  right: 3rem;
 }
+.midnav .rightNavMenu::before {
+  padding: 0.3rem;
+  /* border-top: 1px solid black; */
+}
+
 
 /* 스크롤해서 페이지 넘길때마다 숫자만 바뀌면 되니까 분할해서 각각 위치 absolute로 적용시켰음 */
-.pageNumber1{
+.pageNumber1 {
   position: absolute;
   font-size: 1.5rem;
-  top:75%;
-  left:5%;
+  top: 75%;
+  left: 5%;
 }
 
-.pageNumber2{
+.pageNumber2 {
   position: absolute;
   font-size: 1.5rem;
-  top:175%;
-  left:5%;
+  top: 175%;
+  left: 5%;
 }
 
-.pageNumber3{
+.pageNumber3 {
   position: absolute;
   font-size: 1.5rem;
-  top:275%;
-  left:5%;
+  top: 275%;
+  left: 5%;
 }
 
 /* 버튼도 그냥 설정하기 어려워서 다 분할해서 나눴음 */
 /* 클릭하면 넘기는 기능 그냥 oneclick기능으로 구현하다 보니 이렇게 해야됬음 */
 /* 고정시킨상태로 js로 하려니까 계속 오류떠서 이렇게 구현함 */
-.buttonUpDown1{
-  position:absolute;
-  top:87%;
-  left:5%;
+.buttonUpDown1 {
+  position: absolute;
+  top: 87%;
+  left: 5%;
 }
 
-.buttonUpDown2{
-  position:absolute;
-  top:187%;
-  left:5%;
+.buttonUpDown2 {
+  position: absolute;
+  top: 187%;
+  left: 5%;
 }
 
-.buttonUpDown3{
-  position:absolute;
-  top:287%;
-  left:5%;
+.buttonUpDown3 {
+  position: absolute;
+  top: 287%;
+  left: 5%;
 }
 
-.up{
+.up {
   cursor: pointer;
 }
 
-.down{
-  transform: rotate( 180deg );
+.down {
+  transform: rotate(180deg);
   cursor: pointer;
 }
 
-button{
+button {
   font-size: 1rem;
   display: inline-block;
-  margin-right:-0.4rem;
+  margin-right: -0.4rem;
 }
 
-.footer{
-  position:fixed;
-  top:92%;
-  right:5%;
+.footer {
+  position: fixed;
+  top: 92%;
+  right: 5%;
   font-size: 0.8rem;
 }
 
-.circle{
-  border : 1px solid;
-  width : 11rem;
-  height : 11rem;
+.circle {
+  border: 1px solid;
+  width: 11rem;
+  height: 11rem;
   border-radius: 5.5rem;
   background-color: gray;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,55 +136,58 @@ button{
 
   /* 위치설정 관련 원인불명 오류발생 */
   /* fixed설정된 것을 3번 다 적으니까 겹쳐서 오류나는 거였음... */
-  top : 50%;
+  top: 50%;
   left: 15%;
   opacity: 0.5;
-  color:white;
+  color: white;
 }
 
-.circleImage, .circleText{
+.circleImage,
+.circleText {
   margin-top: 0.5rem;
 }
 
-.rightNavMenu::after{
+.rightNavMenu::after {
   content: "·";
-  margin-left:0.8rem;
+  margin-left: 0.8rem;
 }
 
-.rightNavMenu:last-child::after{
+.rightNavMenu:last-child::after {
   content: "";
 }
 
-
 /* 드롭다운 메뉴 구현 */
-.rightNav>.subMenu{
-  position:absolute;
-  top : 1.5rem;
-  left:0;
-  height:0;
-  display:inline-block;
+.rightNav > .subMenu {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 0;
+  display: inline-block;
   list-style: none;
-  overflow:hidden;
-  transition:height ease-out 0.5s 0s;
+  overflow: hidden;
+  transition: height ease-out 0.5s 0s;
   background-color: white;
 }
 
-
-.rightNav>.subMenu li{
-  background-color:white;
-  border:1px black solid;
+.rightNav > .subMenu li {
+  background-color: white;
+  border: none;
 }
 
-.rightNav>.subMenu li>a{
-  text-decoration:none;
-  color:black;
+.rightNav > .subMenu li > a {
+  text-decoration: none;
+  color: black;
 }
 
-#subMenu2{
-  left:30%;
+ul {
+  width: 5rem;
+  /* border-top: 1px solid black; */
 }
 
-#subMenu4{
-  left:80%;
+#subMenu2 {
+  left: 30%;
 }
 
+#subMenu4 {
+  left: 80%;
+}
