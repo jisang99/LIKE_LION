@@ -12,8 +12,15 @@
   멋쟁이사자처럼 블로그
   <br>
 
+  {% if not user.is_authenticated %}
+  <a href="{% url 'login' %}">로그인</a>
+  <a href="{% url 'signup' %}">회원가입</a>
+  {% else %}
+  <a href="{% url 'login' %}">로그인</a>
+  <a href="{% url 'logout' %}">로그아웃</a>
+  {% endif %}
+
   {% block content %}
-  
   {% endblock %}
 </body>
 </html>
